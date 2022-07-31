@@ -1,0 +1,81 @@
+@import "compass/css3";
+
+@import url(http://fonts.googleapis.com/css?family=Roboto:400,700,900);
+@import "compass";
+* {
+  user-select: none;
+  @include box-sizing(border-box);
+}
+
+html {
+  overflow: -moz-scrollbars-vertical; 
+  overflow-y: scroll;
+}
+
+body {
+  font-family:"Roboto", Arial, sans-serif;
+  font-weight: 400;
+  background: #221662;
+  color: white;
+
+}
+
+.blur {
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  opacity: 0.75;
+  transform: scale(1.3);
+  animation: zoom 0.7s ease-out 0s 1;
+  z-index: -1;
+}
+
+.login {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin: -150px 0 0 -150px;
+  width: 300px;
+  height: 300px;
+  color: rgba(#fff, .85);
+  display: inline-block;
+  font-size: 16px;
+  padding: 8px 12px;
+  text-decoration: none;
+  border-radius: 10px;
+  @include background-clip(padding-box);
+  @include box-shadow(inset -1px 1px 0px rgba(255, 255, 255, 0.3),
+  inset 1px 1px 0px rgba(255, 255, 255, 0.3)
+  );
+  border: 1px solid #000;
+  background-color: rgba(#000, .1);
+  @include background-image(linear-gradient(top, rgba(#000, .1), rgba(#000, .3)));
+  h2 {
+    margin: .5em;
+    text-align: center;
+    //@include background-image(linear-gradient(#fff, #eee));
+    //@include background-clip(text);
+    //-webkit-text-fill-color: transparent;
+    text-shadow: 0 1px 2px rgba(#000,.5);
+    font-weight: 900;
+  }
+  input,
+  label,
+  .extra {
+    outline: none;
+    position: absolute;
+  }
+}
+
+
+
+
+
+
+
+
+
+
+

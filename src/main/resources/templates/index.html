@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="">
+<head>
+	<meta charset="UTF-8">
+	<title>index</title>
+
+	<link rel="stylesheet" href="css/style.css" media="screen" type="text/css" />
+
+</head>
+<body>
+<form id="login" class="login">
+	<h2>Welcome</h2>
+	    <ul>
+
+			<li><a href="@{/users/new}">New User</a></li>
+			<li><a href="@{/users/{id}(id=${user.getId()})}"> Edit Users</a></li>
+		</ul>
+
+</form>
+</body>
+</html>
